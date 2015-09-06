@@ -1,7 +1,7 @@
 var articles = [];
 
 var displayedArticles = [];		
-
+console.log("importing main.js");
 function Article(releaseDate, title, link, source, publicationDate, category, tags, quote, id) {
 	this.releaseDate = releaseDate,
 	this.title = title,
