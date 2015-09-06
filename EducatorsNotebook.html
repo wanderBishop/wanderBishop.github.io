@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+		<script src="jquery-2.1.1.js"></script>
+		<script src="scripts/main.js"></script>
+		<link type="text/css" rel="stylesheet" href="./EduNtbk.css"/>
+	</head>
+	<body>
+		<div id="heading">
+			<h1>The Educator's Notebook</h1>
+			<p>A weekly selection of education related news from around the web</p>
+			<div id="search">
+			
+
+				<label for "terms">Search:</label>
+				<input type="text" name="terms" id="textbox"></input>
+				<select name="Type" id="searchType">
+					<option>Title</option>
+					<option>Quote</option>
+					<option>Tags</option>
+					<option>Source</option>
+				</select>
+				<input type="button" value="Go" onclick="search()" id="search"></input>
+				<label>Sort By:</label>
+				<select id="sortType" onchange="sort()">
+					<option>Relevance</option>
+					<option>Date</option>
+					<option>Source</option>
+				</select>
+			</div>
+		</div>
+		<div id="results">
+		
+		</div>
+	</body>
+</html>
