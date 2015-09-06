@@ -100,7 +100,7 @@ var search = function() {
 					break;
 			
 				case 1:
-					if(articles[i].quote.toLowerCase().contains(termArray[j])) {
+					if(articles[i].quote.toLowerCase().indexOf(termArray[j])!=-1) {
 						console.log("article: "+articles[i].title);
 						var found = false;
 						for(var k = 0; k<articleArray.length;k++) {
@@ -121,7 +121,7 @@ var search = function() {
 						console.log("article: "+articles[i].title);
 						var found = false;
 						for(var k = 0; k<articleArray.length;k++) {
-							if(articleArray[k].tags === articles[i].tags) {
+							if(articleArray[k].title === articles[i].title) {
 								console.log("repeat");
 								articleArray[k].searchVal++;
 								found = true;
@@ -139,7 +139,7 @@ var search = function() {
 						console.log("article: "+articles[i].title);
 						var found = false;
 						for(var k = 0; k<articleArray.length;k++) {
-							if(articleArray[k].source === articles[i].source) {
+							if(articleArray[k].title === articles[i].title) {
 								console.log("repeat");
 								articleArray[k].searchVal++;
 								found = true;
