@@ -83,7 +83,7 @@ var search = function() {
 			switch (item) {
 				
 				case 0:
-					if(articles[i].title.toLowerCase().contains(termArray[j])) {
+					if(articles[i].title.toLowerCase().indexOf(termArray[j])!=-1) {
 						console.log("article: "+articles[i].title);
 						var found = false;
 						for(var k = 0; k<articleArray.length;k++) {
