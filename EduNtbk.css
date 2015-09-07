@@ -43,6 +43,10 @@ a {
 }
 
 .result #first-line {
+	font-weight: bold;
+	display: inline;
+	color: #006400;
+	font-size: 18px;
 }
 
 .result #first-line a {

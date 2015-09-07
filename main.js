@@ -213,7 +213,7 @@ var autoSearcher = function(categoryIndex, terms) {
 }
 
 var displayArticle = function(elem) {
-	$("#results").append('<div class="result"><div id="first-line"><a href="'+elem.link+'">'+elem.title+'</a><p>'+elem.releaseDate+'</p></div><div id="source-line"><p>'+elem.source+'</p><p> '+elem.pubDate+'</p></div><div id="quote">'+elem.quote+'</div><div id="tags">'+elem.tags+'</div></div>');
+	$("#results").append('<a href="'+elem.link+'"><div class="result"><div id="first-line">'+elem.title+'<p>'+elem.releaseDate+'</p></div><div id="source-line"><p>'+elem.source+'</p><p> '+elem.pubDate+'</p></div><div id="quote">'+elem.quote+'</div><div id="tags">'+elem.tags+'</div></div></a>');
 }
 	
 console.log("more checks");
